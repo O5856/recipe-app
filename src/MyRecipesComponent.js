@@ -4,7 +4,7 @@ function MyRecipesComponent({ label, image, calories, ingredients, caution, time
     return (
         <div className="recipe-card">
             <h2>{label}</h2>
-            <img src={image} alt="recipe-image" />
+            <img src={image} alt="recipe" />
 
             <div className="recipe-description">
                 <div className="ingredients">
