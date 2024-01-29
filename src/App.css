@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.heading-container {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 500px;
+  margin: 0px 0 30px 0px;
+  box-shadow: 5px 15px 20px 5px rgb(0 0 0 / 10%);
+}
+
+.input-container {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  box-shadow: 5px 15px 20px 5px rgb(0 0 0 / 20%);
+}
+
+.input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+
+}
+
+.btn {
+  border: none;
+  background-color: white;
+}
+
+.logo-img {
+  max-width: 20px;
+}
+
+.recipes-results {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.recipe-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 400px;
+  margin:100px 0 0 50px;
+  padding: 50px;
+  box-shadow: 5px 15px 20px 5px rgb(0 0 0 / 20%);
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.recipe-description{
+display: flex;
+justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ingredients {
+  display: flex;
+  flex-direction: column;
 }
+
+.ingredients-list{
+  list-style: none;
+  padding: 0;
+}
+
